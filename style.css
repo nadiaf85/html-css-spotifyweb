@@ -30,9 +30,9 @@
 }
 
 .bloccogrosso{
-    background-color: red;
+    background-color: #262626;
     width: 80%;
-    height: 600px;
+    height: 900px;
     position: relative;
 }
 
@@ -54,7 +54,36 @@
     font-size: 10px;
 }
 
+nav{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
+.contenutocx nav li{
+    display: inline;
+    text-transform: uppercase;
+    list-style: none;
+    padding-right: 10px;
+    color: lightgray;
+}
+
+.big-title{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cd>img{
+    width: 10%;
+}
+
+.locandine h5{
+    color: white;
+}
+
+.locandine h6{
+    color: grey;
+}
 
 
 
