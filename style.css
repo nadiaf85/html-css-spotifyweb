@@ -8,6 +8,13 @@ body{
     height: 100vh;
 }
 
+/* Main */
+
+main{
+    height: calc(100vh - 90px);
+    display:flex;
+}
+
 main a{
     text-decoration: none;
     color: white;
@@ -15,13 +22,6 @@ main a{
 
 main a:hover{
     color: grey;
-}
-
-/* Main */
-
-main{
-    height: calc(100vh - 90px);
-    display:flex;
 }
 
 .lateral-nav{
@@ -32,6 +32,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    font-size: 13px;
 }
 
 .logo>img{
@@ -45,10 +46,12 @@ main{
 
 .tre-icone{
     margin-bottom: 20px;
+    line-height: 30px;
 }
 
 .listp h1{
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 .lateral-nav .text{
@@ -60,8 +63,31 @@ main{
 .bottomsx{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 135px;
 }
 
+.bloc2 .user-avatar{
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+}
+
+
+.bloc2 .install a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloc2 .username{
+    color: white;
+}
+
+.bloc2{
+    position: relative;
+}
 
 .bloccogrosso{
     background-color: #191919;
@@ -84,6 +110,8 @@ main{
     align-items: center;
     left: 200px;
     top: 0px;
+    font-weight: bold;
+    z-index: 1;
 }
 
 .barraup a{
@@ -115,6 +143,22 @@ nav{
     color: grey;
 }
 
+/* nav li a{
+    line-height: 1;
+    display: inline-block;
+    color: lime;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav li a:after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: lime;
+} */
+
 /* Sezione 1 main */
 
 .recently{
@@ -123,15 +167,30 @@ nav{
 }
 
 section h1,h4{
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .cd{
     width: calc( 100% / 6 );
+    padding: 8px;
+    position: relative;
 }
 
+.playicon{
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    top: 50px;
+    left: 65px;
+}
+
+/* .cd:hover{
+    color: lightgray;
+    cursor: pointer;
+} */
+
 .cd>img{
-    width: 80%;
+    width: 100%;
     position: relative;
 }
 
@@ -146,6 +205,7 @@ section h1,h4{
     flex-direction: row;
     text-align: center;
     justify-content: flex-start;
+    position: relative;
 }
 
 .locandine h5{
@@ -154,6 +214,12 @@ section h1,h4{
 
 .locandine h6{
     color: grey;
+}
+
+.locandine .cd i{
+    position: absolute;
+    width: 30%;
+    color: white;
 }
 
 
@@ -166,18 +232,12 @@ section h1,h4{
 .sec2loc .jondoe h4{
     color: gray;
     margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 .sec2loc{
     margin-top: 40px;
-}
-
-.sec2loc .locandine .cd img{
-    width: 40%;
-}
-
-.sec2loc .locandine .cd{
-    width: 30%;
 }
 
 /* Sezione 3 main */
@@ -193,10 +253,12 @@ section h1,h4{
 .sec3loc .popolar h4{
     color: gray;
     margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
-.sec3loc .locandine .cdtond img{
-    width: 40%;
+.sec3loc .locandine .cd img{
+    width: 100%;
     border-radius: 80px;
 }
 
@@ -217,19 +279,11 @@ footer{
 }
 
 .sinister img{
-    width: 60%;
+    width: 25%;
     height: 60px;
-    display: inline-block;
-    
+    margin-left: 10px;
 }
 
-
-
-/* .sinister{
-    display: flex;
-    flex-direction: row;
-   
-} */
 
 .heart-folder{
     display: flex;
@@ -243,16 +297,20 @@ footer{
 
 .barra-centro{
     width: 60%;
+    text-align: center;
 
 }
 
 .playcx i{
     color: white;
+    padding: 6px;
     
 }
 
 .barra-right i{
     color: white;
+    text-align: center;
+    padding: 6px;
 }
 
 /* label {

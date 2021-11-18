@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
@@ -47,13 +49,17 @@
                             <a href=""><div>Nome playlist</div></a>
                         </div>
                     </div>
-                    <div class="bloc2"></div>
+
+                    <div class="bloc2">
                         <div class="bottomsx">
                             <div class="install">
-                                <i class="fas fa-arrow-circle-down"> Installa app</i>
+                                <a href=""><i class="fas fa-arrow-circle-down"> Installa app</i></a>
                             </div>
-                            <div class="user">
-                                <i class="far fa-user"> John Doe</i>
+                            <div class="user-avatar">
+                                <a href=""><img src="img/profile.svg" alt="">John Doe</a>
+                            </div>
+                            <div class="username">
+                                <h5>John Doe</h5>
                             </div>
                         </div>        
                     </div>
@@ -87,10 +93,10 @@
                         <div class="locandine">
                             <div class="cd">
                                 <img src="img/metal_lifting.jpg" alt="">
-                                <!-- <i class="far fa-play-circle"></i> -->
                                 <h5>Heavy metal</h5>
                                 <h6>Subtitle</h6>
                             </div>
+                            <div class="playicon"><i class="far fa-play-circle"></i></div>
                             <div class="cd">
                                 <img src="img/stranger.jpeg" alt="">
                                 <h5>Stranger Things,Vol.1 (a Netflix Original Series Soundtrack)</h5>
@@ -148,11 +154,11 @@
                         </div>
 
                         <div class="locandine">
-                            <div class="cdtond">
+                            <div class="cd">
                                 <img src="img/youg.jpeg" alt="">
                                 <h5>Lana del Rey</h5>
                             </div>
-                            <div class="cdtond">
+                            <div class="cd">
                                 <img src="img/einaudi.jpeg" alt="">
                                 <h5>Ludovico Einaudi</h5>
                             </div>
@@ -169,11 +175,9 @@
 <footer>
         <div class="barra-left">
             <div class="sinister">
-                <div class="icon-container">
-                    <img src="img/sinister.jpeg" alt="">                    
-                    <div class="tcd">Sinister</div>
-                    <div class="tcd">Brano nome</div>
-                </div>
+                    <div><img src="img/sinister.jpeg" alt=""></div>                    
+                    <!-- <div class="textup">Sinister</div>
+                    <div class="textdown">Brano nome</div> -->
             </div>
             <!-- <div class="heart-folder">
                 <i class="far fa-heart"></i>
