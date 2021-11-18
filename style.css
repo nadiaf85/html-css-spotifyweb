@@ -5,6 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 /* Main */
 
 
@@ -15,7 +20,7 @@
 .bloccosx{
     background-color: black;
     width: 20%;
-    height: 600px;
+    height: 1100px;
     color: lightgray;
     display: flex;
     flex-direction: column;
@@ -32,7 +37,7 @@
 .bloccogrosso{
     background-color: #262626;
     width: 80%;
-    height: 900px;
+    height: 1100px;
     position: relative;
 }
 
@@ -68,13 +73,31 @@ nav{
     color: lightgray;
 }
 
-.big-title{
+/* Sezione 1 main */
+
+.recently{
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+.cd{
+    width: 30%;
+}
 .cd>img{
-    width: 10%;
+    width: 80%;
+    position: relative;
+}
+
+.locandine .cd i{
+    position: absolute;
+    width: 40px;
+    color: white;
+}
+
+.locandine{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
 .locandine h5{
@@ -85,7 +108,51 @@ nav{
     color: grey;
 }
 
+/* Sezione 2 main */
 
+.sec2loc .jondoe h1{
+    color: white;
+}
+
+.sec2loc .jondoe h4{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sec2loc{
+    margin-top: 40px;
+}
+
+.sec2loc .locandine .cd img{
+    width: 40%;
+}
+
+.sec2loc .locandine .cd{
+    width: 30%;
+}
+
+/* Sezione 3 main */
+
+.sec3loc .popolar {
+    margin-top: 20px;
+}
+
+.sec3loc .popolar h1,h5{
+    color: white;
+}
+
+.sec3loc .popolar h4{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sec3loc .locandine .cdtond img{
+    width: 40%;
+}
+
+.sec3loc .locandine .cdtond{
+    width: 30%;
+}
 
 /* Footer */
 
