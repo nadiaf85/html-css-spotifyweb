@@ -10,7 +10,9 @@ main a{
     color: white;
 }
 
-
+main a:hover{
+    color: grey;
+}
 
 /* Main */
 
@@ -100,11 +102,9 @@ nav{
     color: lightgray;
 }
 
-/* .contenutocx nav a:hover{
-    text-decoration: underline;
-    width: 5%;
-    color: lime;
-} */
+.contenutocx nav li:hover{
+    color: grey;
+}
 
 /* Sezione 1 main */
 
@@ -144,6 +144,7 @@ section h1,h4{
 .locandine h6{
     color: grey;
 }
+
 
 /* Sezione 2 main */
 
