@@ -48,6 +48,10 @@ main a:hover{
     margin-bottom: 10px;
 }
 
+.logo .logo-mobile{
+    display: none;
+}
+
 .tre-icone img{
     width: 10%;
 }
@@ -92,7 +96,6 @@ main a:hover{
     float: left;
     margin-right: 10px;
 }
-
 
 .bloc2 .install a{
     font-family: 'Montserrat', sans-serif;
@@ -162,6 +165,7 @@ nav{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .contenutocx nav li{
@@ -170,6 +174,12 @@ nav{
     list-style: none;
     padding-right: 10px;
     color: lightgray;
+}
+
+.linea{
+    position: absolute;
+    bottom:0;
+    color: lime;
 }
 
 .contenutocx nav li:hover{
@@ -187,6 +197,10 @@ section h1,h4{
     margin-left: 5px;
 }
 
+.sec1loc{
+    width: 100%;
+}
+
 .cd{
     width: calc( 100% / 6 );
     padding: 8px;
@@ -200,16 +214,25 @@ section h1,h4{
     top: 50px;
     left: 65px;
     transition: 1s;
+    z-index: 10;
 }
  
 .cop-icon img{
     width: 100%;
 }
 
-.cd .cop-icon i:hover{
+/* .cop-icon:active i{
+    display: block;
+} */
+
+/* .cop-icon:hover i{
+    filter: opacity(0.6);
+} */
+
+/* .cd .cop-icon i:hover{
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 .locandine{
     display: flex;
@@ -235,8 +258,6 @@ section h1,h4{
     color: white;
     display: none;
 }
-
-
 
 /* Sezione 2 main */
 
@@ -332,22 +353,25 @@ footer{
     justify-content: center;
 }
 
-.album .title h2{
+.album .title a h2{
     font-size: 12px;
     line-height: 12px;
     color: white;
     font-weight: bold;
 }
 
-.album .title p{
+.album .title a p{
     font-size: 10px;
+    color: grey;
 }
 
+.album .tile a p:hover{
+    text-decoration: underline;
+}
 
 .barra-left a{
     text-decoration: none;
 }
-
 
 .heart-folder{
     display: flex;
@@ -443,3 +467,82 @@ footer{
 
 /* Media query */
 
+@media screen and (max-width: 576px){
+
+    main .lateral-nav .bloc1 .logo .logo-grande{
+        display: none;
+    }
+
+    main .lateral-nav .bloc1 .logo .logo-mobile{
+        display: block;
+        width: 30px;
+    }
+
+    .lateral-nav{
+        width: 8%;
+    }
+
+    .icona1 img{
+        display: block;
+        width: 30px;
+    }
+    .icona2 img{
+        display: block;
+        width: 30px;
+    }
+    .icona3 img{
+        display: block;
+        width: 30px;
+    }
+
+    /* .icona1 h6{
+        display: none;
+    }
+
+    .icona2 h6{
+        display: none;
+    }
+
+    .icona3 h6{
+        display: none;
+    } */
+
+    .bloc1 .listp, .text{
+        display: none;
+    }
+
+    .bloc2{
+        width: 5%;
+    }
+
+    .bloc2 .install h6{
+        display: none;
+    }
+
+    .bloc2 .containerus .username{
+        display: none;
+    }
+
+    .barraup{
+        width: 64%;
+    }
+
+    .bloccogrosso{
+        width: 530px;
+}
+
+    .contenutocx{
+        width: 500px;
+        font-size: 10px;
+    }
+    
+
+    .locandine{
+        width: 900px;
+        flex-wrap: nowrap;
+    }
+
+    .sec1loc{
+        width: 100%;
+    }
+}
