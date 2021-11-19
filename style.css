@@ -143,6 +143,10 @@ main a:hover{
     z-index: 1;
 }
 
+.barraup a:hover{
+    font-size: 11px;
+}
+
 .barraup a{
     color: white;
     text-decoration: none;
@@ -195,18 +199,16 @@ section h1,h4{
     font-size: 70px;
     top: 50px;
     left: 65px;
+    transition: 1s;
 }
  
 .cop-icon img{
     width: 100%;
 }
 
-.cd .cop-icon i{
-    transition: 1s;
-}
-
 .cd .cop-icon i:hover{
     opacity: 0;
+    cursor: pointer;
 }
 
 .locandine{
@@ -333,11 +335,14 @@ footer{
 .album .title h2{
     font-size: 12px;
     line-height: 12px;
+    color: white;
+    font-weight: bold;
 }
 
 .album .title p{
     font-size: 10px;
 }
+
 
 .barra-left a{
     text-decoration: none;
@@ -354,6 +359,10 @@ footer{
     margin-right: 10px;
 }
 
+.heart-folder a:hover{
+    color: white;
+}
+
 .barra-left, .barra-right{
     width: 250px;
     display: flex;
@@ -363,7 +372,6 @@ footer{
 .barra-centro{
     width: 60%;
     text-align: center;
-
 }
 
 .playcx i{
@@ -371,10 +379,15 @@ footer{
     padding: 6px;    
 }
 
+
 .barra-right i{
     color: white;
     text-align: center;
     padding: 6px;
+}
+
+.playcx .far:hover{
+    font-size: 20px;
 }
 
 /* Bar */
@@ -390,11 +403,11 @@ footer{
     position: relative;
     width: 20%;
     height: 100%;
-    background-color: lime;
+    background-color: grey;
 }
 
-.player-bar:hover{
-    background-color: lightgray;
+.player-bar:hover .player-bar-active{
+    background-color: lime;
 }
 
 .player-bar:hover .pallino{
