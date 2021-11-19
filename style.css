@@ -90,11 +90,24 @@ main a:hover{
     background-color: grey;
     border-radius: 50%;
     float: left;
+    margin-right: 10px;
 }
 
 
 .bloc2 .install a{
     font-family: 'Montserrat', sans-serif;
+}
+
+.bloc2 .install{
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+    width: 175px;
+    padding: 5px;
+}
+
+.bloc2 .containerus{
+    display: flex;
+    align-items: center;
 }
 
 .bloc2 .username{
@@ -176,30 +189,25 @@ section h1,h4{
     position: relative;
 }
 
-.playicon{
+.cop-icon i{
     position: absolute;
     color: white;
     font-size: 70px;
     top: 50px;
     left: 65px;
 }
-
-.playicon:hover{
-    color: lightgray;
-    cursor: pointer;
-}
-
-.cd>img{
+ 
+.cop-icon img{
     width: 100%;
-    position: relative;
 }
 
-.locandine .cd i{
-    position: absolute;
-    width: 40px;
-    color: white;
+.cd .cop-icon i{
+    transition: 1s;
 }
 
+.cd .cop-icon i:hover{
+    opacity: 0;
+}
 
 .locandine{
     display: flex;
@@ -211,6 +219,8 @@ section h1,h4{
 
 .locandine h5{
     color: white;
+    margin-top: 10px;
+    margin-bottom: 6px;
 }
 
 .locandine h6{
@@ -221,7 +231,9 @@ section h1,h4{
     position: absolute;
     width: 30%;
     color: white;
+    display: none;
 }
+
 
 
 /* Sezione 2 main */
@@ -239,6 +251,10 @@ section h1,h4{
 
 .sec2loc{
     margin-top: 40px;
+}
+
+.sec2loc .locandine .cd img{
+    width: 100%;
 }
 
 /* Sezione 3 main */
@@ -289,19 +305,29 @@ footer{
     color: white;
 }
 
+.album{
+    display: flex;
+    justify-content: space-between;
+}
+
 .album .cover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
 }
 
 .album .cover img{
-    width: 20%;
+    width: 90%;
+    margin-left: 10px;
 }
 
 .album .title{
-    width: 50%;
+    width: 100%;
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .album .title h2{
@@ -321,11 +347,17 @@ footer{
 .heart-folder{
     display: flex;
     flex-direction: row;
+}
 
+.heart-folder a{
+    color: grey;
+    margin-right: 10px;
 }
 
 .barra-left, .barra-right{
     width: 250px;
+    display: flex;
+    align-items: center;
 }
 
 .barra-centro{
@@ -383,16 +415,18 @@ footer{
 
 .time{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .time-min , .time-max{
-    width: 10%;
+    width: 3%;
     margin: 0 10px;
     font-size: 10px;
     text-align: center;
     color: white;
 }
+
+/* Media query */
 
