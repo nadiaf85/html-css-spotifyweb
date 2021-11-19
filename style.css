@@ -8,6 +8,10 @@ body{
     height: 100vh;
 }
 
+a{
+    cursor: pointer;
+}
+
 /* Main */
 
 main{
@@ -17,22 +21,26 @@ main{
 
 main a{
     text-decoration: none;
-    color: white;
+    color: grey;
+}
+
+main a img{
+    color: grey;
 }
 
 main a:hover{
-    color: grey;
+    color: white;
 }
 
 .lateral-nav{
     background-color: black;
     width: 200px;
     height: 100%;
-    color: lightgray;
+    color: grey;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .logo>img{
@@ -52,6 +60,14 @@ main a:hover{
 .listp h1{
     text-transform: uppercase;
     font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.listp i{
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 .lateral-nav .text{
@@ -64,7 +80,7 @@ main a:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 135px;
+    top: 100px;
 }
 
 .bloc2 .user-avatar{
@@ -143,22 +159,6 @@ nav{
     color: grey;
 }
 
-/* nav li a{
-    line-height: 1;
-    display: inline-block;
-    color: lime;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav li a:after{
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: lime;
-} */
-
 /* Sezione 1 main */
 
 .recently{
@@ -184,10 +184,10 @@ section h1,h4{
     left: 65px;
 }
 
-/* .cd:hover{
+.playicon:hover{
     color: lightgray;
     cursor: pointer;
-} */
+}
 
 .cd>img{
     width: 100%;
@@ -199,6 +199,7 @@ section h1,h4{
     width: 40px;
     color: white;
 }
+
 
 .locandine{
     display: flex;
@@ -274,20 +275,52 @@ footer{
     background-color: #303030;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 
-.sinister img{
-    width: 25%;
-    height: 60px;
-    margin-left: 10px;
+.barra-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.album a{
+    color: white;
+}
+
+.album .cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album .cover img{
+    width: 20%;
+}
+
+.album .title{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.album .title h2{
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.album .title p{
+    font-size: 10px;
+}
+
+.barra-left a{
+    text-decoration: none;
 }
 
 
 .heart-folder{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -303,8 +336,7 @@ footer{
 
 .playcx i{
     color: white;
-    padding: 6px;
-    
+    padding: 6px;    
 }
 
 .barra-right i{
@@ -313,16 +345,28 @@ footer{
     padding: 6px;
 }
 
-/* label {
-    font: 1rem 'Fira Sans', sans-serif;
+/* Bar */
+
+ .player-bar{
+    width: 40%;
+    height: 4px;
+    cursor: pointer;
+    background-color: grey;
 }
 
-input {
-    margin: .4rem;
-} */
-
-/* .player-bar{
+.player-bar-active{
     position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: lime;
+}
+
+.player-bar:hover{
+    background-color: lightgray;
+}
+
+.player-bar:hover .pallino{
+    display: block;
 }
 
 .pallino{
@@ -333,4 +377,22 @@ input {
     border-radius: 50%;
     top: 50%;
     right: 0;
-} */
+    display: none;
+    transform: translateY(-50%);
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.time-min , .time-max{
+    width: 10%;
+    margin: 0 10px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+

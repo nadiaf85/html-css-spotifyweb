@@ -35,18 +35,18 @@
                         </div>
 
                         <div class="listp">
-                            <h1>playlist</h1>
-                            <i class="far fa-plus-square"> Crea playlist</i>
+                            <a href="#"><h1>playlist</h1></a>
+                            <a href="#"><i class="far fa-plus-square"></i> Crea playlist</a>
                         </div>
                         
                         <div class="text">
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
-                            <a href=""><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
+                            <a href="#"><div>Nome playlist</div></a>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@
                                 <a href=""><i class="fas fa-arrow-circle-down"> Installa app</i></a>
                             </div>
                             <div class="user-avatar">
-                                <a href=""><img src="img/profile.svg" alt="">John Doe</a>
+                                <a href=""><img src="img/profile.svg" alt=""></a>
                             </div>
                             <div class="username">
                                 <h5>John Doe</h5>
@@ -74,12 +74,12 @@
                 <div class="contenutocx">
                     <nav>
                         <ul>
-                            <a href=""><li>in evidenza</li></a>
-                            <a href=""><li>podcast</li></a>
-                            <a href=""><li>classifiche</li></a>
-                            <a href=""><li>generi e mood</li></a>
-                            <a href=""><li>nuove uscite</li></a>
-                            <a href=""><li>scopri</li></a>
+                            <a href="#"><li>in evidenza</li></a>
+                            <a href="#"><li>podcast</li></a>
+                            <a href="#"><li>classifiche</li></a>
+                            <a href="#"><li>generi e mood</li></a>
+                            <a href="#"><li>nuove uscite</li></a>
+                            <a href="#"><li>scopri</li></a>
                         </ul>
                     </nav>
 
@@ -96,7 +96,7 @@
                                 <h5>Heavy metal</h5>
                                 <h6>Subtitle</h6>
                             </div>
-                            <div class="playicon"><i class="far fa-play-circle"></i></div>
+                            <div class="playicon"><a href=""><i class="far fa-play-circle"></i></a></div>
                             <div class="cd">
                                 <img src="img/stranger.jpeg" alt="">
                                 <h5>Stranger Things,Vol.1 (a Netflix Original Series Soundtrack)</h5>
@@ -174,15 +174,19 @@
 
 <footer>
         <div class="barra-left">
-            <div class="sinister">
-                    <div><img src="img/sinister.jpeg" alt=""></div>                    
-                    <!-- <div class="textup">Sinister</div>
-                    <div class="textdown">Brano nome</div> -->
-            </div>
-            <!-- <div class="heart-folder">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-            </div>           -->
+            <div class="album">
+                    <div class="cover">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Sinister</a></h2>
+                        <p><a href="#">Brano</a></p>
+                    </div>                    
+                    <div class="heart-folder">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="far fa-folder"></i></a>
+                    </div>
+                </div>          
         </div>
 
         <div class="barra-centro">
@@ -193,6 +197,18 @@
                 <i class="fa fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
+                
+            <div class="time">
+                <div class="time-min">0.25</div>
+                    <div class="player-bar">
+                        <div class="player-bar-active">
+                            <div class="pallino"></div>
+                        </div>
+                    </div>                       
+                        <div class="time-max">4.35</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="barra-right">
@@ -201,25 +217,13 @@
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
             </div>
-        </div>
-
-
-        <!-- <div>
-            <input type="range" id="volume" name="volume"
-                   min="0" max="11">
-            <label for="volume">Volume</label>
-        </div> -->
-        <!-- <section id="content">
             <div class="player-bar">
-                <div class="genbar">
+                <div class="player-bar-active">
                     <div class="pallino"></div>
                 </div>
-            </div>
-
-        </section> -->
+            </div> 
+        </div>
  </footer>
-
-
 
 </body>
 </html>
