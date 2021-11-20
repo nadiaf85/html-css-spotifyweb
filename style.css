@@ -41,6 +41,7 @@ main a:hover{
     flex-direction: column;
     padding: 10px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .logo>img{
@@ -52,14 +53,24 @@ main a:hover{
     display: none;
 }
 
+.tre-icone .home, .cerca, .libreria{
+    margin-left: 8px;
+    vertical-align: super;
+}
+
 .tre-icone img{
-    width: 10%;
+    width: 12%;
 }
 
 .tre-icone{
     margin-bottom: 20px;
     line-height: 30px;
 }
+
+/* .tre-icone .icona1 a .here{
+    color: lime;
+    border-left: 2px solid;
+} */
 
 .listp h1{
     text-transform: uppercase;
@@ -167,6 +178,8 @@ nav{
     margin-top: 10px;
     margin-bottom: 20px;
     position: relative;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .contenutocx nav li{
@@ -177,11 +190,10 @@ nav{
     color: lightgray;
 }
 
-.linea{
-    position: absolute;
-    bottom:0;
+/* .contenutocx ul .here{
     color: lime;
-}
+    border-bottom: 1px solid;
+} */
 
 .contenutocx nav li:hover{
     color: grey;
@@ -215,7 +227,7 @@ section h1,h4{
     top: 60px;
     left: 70px;
     opacity: 0;
-    transition: 0.7s;
+    transition: 0.2s;
 }
 
 .cop-icon i:hover{
@@ -225,6 +237,10 @@ section h1,h4{
 .cop-icon img{
     width: 100%;
     position: relative;
+}
+
+.cop-icon img:hover{
+    /* filter: grayscale(1); */
 }
 
 .locandine{
@@ -265,6 +281,7 @@ section h1,h4{
 .sec2loc .locandine .cd img{
     width: 100%;
 }
+
 
 /* Sezione 3 main */
 
@@ -465,19 +482,27 @@ footer{
 
 /* Media query */
 
-/* @media screen and (max-width: 576px){
+/* Versione xs */
+
+@media screen and (max-width: 576px) {
 
     main .lateral-nav .bloc1 .logo .logo-grande{
         display: none;
     }
 
-    main .lateral-nav .bloc1 .logo .logo-mobile{
+    /* main .lateral-nav .bloc1 .logo .logo-mobile{
         display: block;
         width: 30px;
-    }
+    } */
 
-    .lateral-nav{
+    /* .lateral-nav{
         width: 8%;
+    } */
+
+    /* .tre-icone .home, .cerca, .libreria{
+        margin-left: 8px;
+        vertical-align: super;
+        display: none;
     }
 
     .icona1 img{
@@ -542,5 +567,8 @@ footer{
 
     .sec1loc{
         width: 100%;
-    }
-} */
+    } */
+    
+    
+}
+
