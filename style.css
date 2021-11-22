@@ -95,7 +95,7 @@ main a:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 96px;
+    top: 86px;
 }
 
 .bloc2 .user-avatar{
@@ -551,7 +551,7 @@ footer{
     }
 
     .barraup{
-        width: 64%;
+        width: 56%;
     }
 
     nav{
@@ -572,14 +572,34 @@ footer{
         flex-wrap: wrap;
     }
 
+    .locandine .cd{
+        width: 34%;
+    }
+
+    .cop-icon{
+        width: 60%;
+    }
+
     .sec1loc{
         width: 100%;
+    }
+
+    .sec1loc .locandine .cd{
+        margin-right: 0px;
+    }
+
+    .locandine h5,h6{
+        width: 60%;
+    }
+
+    .sec3loc .locandine .cd img {
+        width: 60%;
     }
 }
 
 /* Versione medium - Small devices (landscape phones) */
 
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
     
     .bloccogrosso{
         width: calc( 100% - 60px );
@@ -720,13 +740,22 @@ footer{
     }
 }
 
-/* Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... } */
+/* Versione medium devices (tablets) */
+
+@media screen and (min-width: 768px){
+
+}
+
+
+
+@media screen and (min-width: 992px){
+
+}
 
 
 
 /* Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... } FATTA */
+@media (min-width: 992px) { ... }  */
 
 /* Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
