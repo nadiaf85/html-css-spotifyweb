@@ -220,6 +220,10 @@ section h1,h4{
     position: relative;
 }
 
+/* .cop-icon:hover{
+    filter: grayscale(90%);
+} */
+
 .cop-icon i{
     position: absolute;
     color: white;
@@ -228,9 +232,10 @@ section h1,h4{
     left: 70px;
     opacity: 0;
     transition: 0.2s;
+    transform: translate(10% , 20%);
 }
 
-.cop-icon i:hover{
+.cop-icon:hover i{
     opacity: 1;
 }
  
@@ -482,85 +487,36 @@ footer{
 
 /* Media query */
 
-/* Versione xs */
 
-@media screen and (max-width: 480px) {
+/* Versione medium - Small devices (landscape phones) */
 
-    main .lateral-nav .bloc1 .logo .logo-grande{
-        display: none;
-    }
-
-    main .lateral-nav .bloc1 .logo .logo-mobile{
-        display: block;
-        width: 30px;
-    }
-
+@media screen and (max-width: 576px){
+    
     .lateral-nav{
-        width: 10%;
-    }
-
-    .tre-icone .home, .cerca, .libreria{
-        margin-left: 8px;
-        vertical-align: super;
-        display: none;
-    }
-
-    .icona1 img{
-        display: block;
-        width: 30px;
-    }
-    .icona2 img{
-        display: block;
-        width: 30px;
-    }
-    .icona3 img{
-        display: block;
-        width: 30px;
-    }
-
-    .icona1 h6{
-        display: none;
-    }
-
-    .icona2 h6{
-        display: none;
-    }
-
-    .icona3 h6{
-        display: none;
+        width: 30%;
     }
 
     .bloc1{
         margin-bottom: 200px;
     }
 
-    .bloc1 .listp, .text{
-        display: none;
-    }
 
     .bloc2{
         width: 5%;
     }
 
-    .bloc2 .install h6{
-        display: none;
-    }
-
-    .bloc2 .containerus .username{
-        display: none;
-    }
-
     .barraup{
-        width: 56%;
+        width: calc( 100% - 50px);
+        left: 50px;
     }
 
     nav{
-        font-size: 11px;
-        line-height: 40px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .bloccogrosso{
-        width: calc( 100% - 30px );
+        width: calc( 100% - 50px );
     }
 
     .contenutocx{
@@ -568,7 +524,7 @@ footer{
     }
     
     .locandine{
-        width: 900px;
+        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -577,7 +533,7 @@ footer{
     }
 
     .cop-icon{
-        width: 60%;
+        width: 100%;
     }
 
     .sec1loc{
@@ -589,42 +545,33 @@ footer{
     }
 
     .locandine h5,h6{
-        width: 60%;
+        width: 80%;
     }
 
     .sec3loc .locandine .cd img {
         width: 60%;
     }
-}
-
-/* Versione medium - Small devices (landscape phones) */
-
-@media screen and (max-width: 576px){
-    
-    .bloccogrosso{
-        width: calc( 100% - 60px );
-    }
 
     nav{
-        font-size: 8px;
+        font-size: 11px;
         line-height: 20px;
     }
 
-    .lateral-nav{
-        font-size: 8px;
-        width: 150px;
+    .nav ul li{
+        margin-right: 10px;
     }
 
+    
     .lateral-nav .logo{
         width: 180px;
     }
 
     .lateral-nav .text{
-        line-height: 20px;
+        line-height: 25px;
     }
 
     .tre-icone{
-        line-height: 13px;
+        line-height: 20px;
     }
 
     .listp h1{
@@ -640,11 +587,12 @@ footer{
     }
 
     .bloc1{
-        margin-bottom: 35px;
+        margin-bottom: -7px;
+        font-size: 10px;
     }
 
     .bloc2 .install{
-        width: 120px;
+        width: 140px;
     }
 
     .sec1loc{
@@ -652,7 +600,7 @@ footer{
     }
 
     .sec1loc .locandine .cd{
-        margin-right: 26px;
+        margin-right: 0px;
     }
 
     .sec1loc .recently h1{
@@ -663,8 +611,8 @@ footer{
         margin-bottom: 12px;
     }
 
-    .cd{
-        width: 70px;
+    .locandine .cd{
+        width: 50%;
     }
 
     .locandine{
@@ -672,7 +620,7 @@ footer{
     }
 
     .sec1loc .cop-icon img{
-        width: 90px;
+        width: 140px;
     }
 
     .sec1loc .locandine .cop-icon .cd h5{
@@ -701,12 +649,20 @@ footer{
         left: 40px;
     }
 
+    .sec2loc{
+        width: 100%;
+    }
+
+    .sec2loc .locandine .cd{
+        width: 50%;
+    }
+
     .sec2loc .locandine .cd img{
-        width: 90px;
+        width: 140px;
     }
 
     .sec2loc, .sec3loc, .locandine .cd{
-        margin-right: 30px;
+        margin-right: 0px;
     }
 
     .sec2loc .jondoe h1{
@@ -742,20 +698,21 @@ footer{
 
 /* Versione medium devices (tablets) */
 
-@media screen and (min-width: 768px){
-
-}
-
 
 
 @media screen and (min-width: 992px){
 
+    nav{
+        width: 70%;
+    }
+
+    .bloccogrosso{
+        width: 80%;
+    }
+
+    .sec1loc{
+        width: 80%;
+    }
 }
 
 
-
-/* Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }  */
-
-/* Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
