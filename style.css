@@ -67,10 +67,9 @@ main a:hover{
     line-height: 30px;
 }
 
-/* .tre-icone .icona1 a .here{
-    color: lime;
-    border-left: 2px solid;
-} */
+main .bloccogrosso a.active {
+    color: #BFBFBF;
+  }
 
 .listp h1{
     text-transform: uppercase;
@@ -190,10 +189,6 @@ nav{
     color: lightgray;
 }
 
-/* .contenutocx ul .here{
-    color: lime;
-    border-bottom: 1px solid;
-} */
 
 .contenutocx nav li:hover{
     color: white;
@@ -232,21 +227,22 @@ section h1,h4{
     left: 70px;
     opacity: 0;
     transition: 0.2s;
-    transform: translate(10% , 20%);
+    transform: translate(10% , 10%);
 }
 
 .cop-icon:hover i{
     opacity: 1;
 }
  
+.cop-icon:hover{
+    filter: grayscale(0.5);
+}
+
 .cop-icon img{
     width: 100%;
     position: relative;
 }
 
-.cop-icon img:hover{
-    /* filter: grayscale(1); */
-}
 
 .locandine{
     display: flex;
@@ -702,17 +698,16 @@ footer{
 
 @media screen and (min-width: 992px){
 
-    nav{
+     /* nav{
         width: 70%;
     }
 
     .bloccogrosso{
-        width: 80%;
+        width: 100%;
     }
 
     .sec1loc{
-        width: 80%;
-    }
+        width: 100%;
+    } */
 }
-
 
