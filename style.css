@@ -698,16 +698,18 @@ footer{
 
 @media screen and (min-width: 992px){
 
-     /* nav{
-        width: 70%;
+    .locandine{
+        width: 100%;
+        flex-wrap: wrap;
     }
 
-    .bloccogrosso{
-        width: 100%;
+    .cd{
+        width: 25%;
     }
 
-    .sec1loc{
-        width: 100%;
-    } */
+    nav{
+        font-size: 18px;
+        line-height: 60px;
+    }
 }
 
